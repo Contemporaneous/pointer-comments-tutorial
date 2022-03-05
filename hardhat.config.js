@@ -9,5 +9,9 @@ require("@nomiclabs/hardhat-waffle");
     hardhat: {
       chainId: 1337,
     },
+    matic: {
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [process.env.PRIVATE_KEY],
+    },
   },
 };

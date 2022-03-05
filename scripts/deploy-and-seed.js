@@ -11,11 +11,8 @@ async function main() {
 
   await contract.deployed();
 
-  const tx1 = await contract.addComment("my-blog-post", "My first comment");
+  const tx1 = await contract.addComment("my-blog-post", "The Original Comment");
   await tx1.wait();
-
-  const tx2 = await contract.addComment("my-blog-post", "My second comment");
-  await tx2.wait();
 
   console.log("Contract deployed to:", contract.address);
 }
